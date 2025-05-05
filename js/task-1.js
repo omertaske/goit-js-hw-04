@@ -53,9 +53,9 @@ for(let key in products){
 
 
 if (value<= containerSize) {
-    console.log("true");
+    return true;
 } else {
-    console.log("false");
+   return false;
 }
 
 

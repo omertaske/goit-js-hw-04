@@ -36,28 +36,23 @@ profile nesnesini özellikleriyle çalışmak için metodlarla tamamlayın.
 */
 
 const profile = {
-	username: "Jacob",
-  playTime: 300,
-  changeUsername : function changeUsername(newName){
-
-    profile.username = newName;
- //   console.log(profile);
-
-},
-updatePlayTime : function updatePlayTime(hours){
-    profile.playTime += hours;
-  //  console.log(profile);
-        
+    username: "Jacob",
+    playTime: 300,
+  
+    changeUsername(newName) {
+      this.username = newName;
     },
-    getInfo : function getInfo() {
-        // console.log();
-        return profile.username +" has " + profile.playTime+  " active hours!";
+  
+    updatePlayTime(hours) {
+      this.playTime += hours;
+    },
+  
+    getInfo() {
+      return `${this.username} has ${this.playTime} active hours!`;
     }
+  };
 
-
-
-};
-
+  
 
 
 
